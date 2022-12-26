@@ -92,26 +92,22 @@ public protocol DataBSable: DOMElement, CSSRulable, ClassAttrable {
 extension DataBSable {
     @discardableResult
     public func dataBSToggle(_ value: String) -> Self {
-        self.setter.setAttribute("data-bs-toggle", value)
-        return self
+        attribute("data-bs-toggle", value)
     }
     
     @discardableResult
     public func dataBSTarget(_ value: String) -> Self {
-        self.setter.setAttribute("data-bs-target", value)
-        return self
+        attribute("data-bs-target", value)
     }
     
     @discardableResult
     public func dataBSParent(_ value: String) -> Self {
-        self.setter.setAttribute("data-bs-parent", value)
-        return self
+        attribute("data-bs-parent", value)
     }
     
     @discardableResult
     public func dataBSDismiss(_ value: String) -> Self {
-        self.setter.setAttribute("data-bs-dismiss", value)
-        return self
+        attribute("data-bs-dismiss", value)
     }
 }
 
